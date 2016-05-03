@@ -27,6 +27,7 @@ task clean(type: Delete) {
 
 ext {
     // App dependencies
+    
     supportLibraryVersion = '23.3.0'
 
     buildToolsVersion = "${BUILD_TOOLS_VERSION}"
