@@ -26,6 +26,7 @@ task clean(type: Delete) {
 }
 
 ext {
+
     // App dependencies
     
     supportLibraryVersion = '23.3.0'
