@@ -8,8 +8,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
-public class ScrollingActivity extends AppCompatActivity {
+import com.xushao.test.library.DemoHelper;
+
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +30,9 @@ public class ScrollingActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        TextView demoLabel = (TextView) findViewById(R.id.main_text_1);
+        demoLabel.setText(DemoHelper.getDemoName());
     }
 
     @Override
@@ -49,4 +55,5 @@ public class ScrollingActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
 }
